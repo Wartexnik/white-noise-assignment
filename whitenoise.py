@@ -72,6 +72,7 @@ def cnn_ab(shape):
 
 
 def cnn_alexnet(shape):
+    """Implementation of AlexNet."""
     model = tf.keras.models.Sequential([
         tf.keras.layers.Resizing(227, 227, input_shape=shape),
         tf.keras.layers.Conv2D(96, (11, 11), strides=(4, 4),
